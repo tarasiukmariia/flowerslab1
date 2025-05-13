@@ -18,17 +18,17 @@ export default function useHttp(url, config, initialData) {
   }
 
   const sendRequest = useCallback(
-    async function sendRequest(data) {
-      setIsLoading(true);
-      try {
-        const resData = await sendHttpRequest(url, { ...config, body: data });
-        setData(resData);
-      } catch (error) {
-        setError(error.message || "error");
-      }
-      setIsLoading(false);
-    },
-    [url, config]
+      async function sendRequest(data) {
+        setIsLoading(true);
+        try {
+          const resData = await sendHttpRequest(url, { ...config, body: data });
+          setData(resData);
+        } catch (error) {
+          setError(error.message || "error");
+        }
+        setIsLoading(false);
+      },
+      [url, config]
   );
   useEffect(() => {
     if ((config && (config.method === "GET" || !config.method)) || !config) {

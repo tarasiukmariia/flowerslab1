@@ -8,20 +8,20 @@ export default function FlowerItem({ flower }) {
     cartCtx.addItem(flower);
   }
   return (
-    <li className="flower-item">
-      <article>
-        <img src={`http://localhost:3000/${flower.image}`} alt={flower.name} />
-        <div>
-          <h3>{flower.name}</h3>
-          <p className="flower-item-price">
-            {currencyFormatter.format(flower.price)}
+      <li className="flower-item">
+        <article>
+          <img src={`http://localhost:3000/${flower.image}`} alt={flower.name} />
+          <div>
+            <h3>{flower.name}</h3>
+            <p className="flower-item-price">
+              {currencyFormatter.format(flower.price)}
+            </p>
+            <p className="flower-item-description">{flower.description}</p>
+          </div>
+          <p className="flower-item-actions">
+            <Button onClick={handleAddFlowerToCart}>Замовити</Button>
           </p>
-          <p className="flower-item-description">{flower.description}</p>
-        </div>
-        <p className="flower-item-actions">
-          <Button onClick={handleAddFlowerToCart}>Замовити</Button>
-        </p>
-      </article>
-    </li>
+        </article>
+      </li>
   );
 }

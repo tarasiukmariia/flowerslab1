@@ -19,13 +19,13 @@ export default function Checkout() {
   };
 
   const { data, error, sendRequest, clearData } = useHttp(
-    "http://localhost:3000/orders",
-    requestConfig
+      "http://localhost:3000/orders",
+      requestConfig
   );
 
   const cartTotal = cartCtx.items.reduce(
-    (totalPrice, item) => totalPrice + item.quantity * item.price,
-    0
+      (totalPrice, item) => totalPrice + item.quantity * item.price,
+      0
   );
   function handleClose() {
     userProgressCtx.hideCheckout();
@@ -40,25 +40,25 @@ export default function Checkout() {
     const customerData = Object.fromEntries(fd.entries());
 
     await sendRequest(
-      JSON.stringify({
-        order: {
-          items: cartCtx.items,
-          customer: customerData,
-        },
-      })
+        JSON.stringify({
+          order: {
+            items: cartCtx.items,
+            customer: customerData,
+          },
+        })
     );
   }
   const [formState, formAction, isSending] = useActionState(
-    checkoutAction,
-    null
+      checkoutAction,
+      null
   );
   let actions = (
-    <>
-      <Button type="button" textOnly onClick={handleClose}>
-        Закрити
-      </Button>
-      <Button>Далі</Button>
-    </>
+      <>
+        <Button type="button" textOnly onClick={handleClose}>
+          Закрити
+        </Button>
+        <Button>Далі</Button>
+      </>
   );
   if (isSending) {
     actions = <span>Надсилання даних ...</span>;
@@ -66,19 +66,19 @@ export default function Checkout() {
 
   if (data && !error) {
     return (
-      <Modal
-        open={userProgressCtx.progress === "checkout"}
-        onClose={handleClose}
-      >
-        <h2>Дякуємо!</h2>
-        <p>Ваше замовлення зареєстровано.</p>
-        <p>
-          Найближчим часом ми зв’яжемося з вами ♥.
-        </p>
-        <p className="modal-actions">
-          <Button onClick={handleFinish}>Закрити</Button>
-        </p>
-      </Modal>
+        <Modal
+            open={userProgressCtx.progress === "checkout"}
+            onClose={handleClose}
+        >
+          <h2>Дякуємо!</h2>
+          <p>Ваше замовлення зареєстровано.</p>
+          <p>
+            Найближчим часом ми зв’яжемося з вами ♥️.
+          </p>
+          <p className="modal-actions">
+            <Button onClick={handleFinish}>Закрити</Button>
+          </p>
+        </Modal>
     );
   }
   return (
@@ -96,10 +96,10 @@ export default function Checkout() {
 
 
           {error && (
-          <Error title="Не вдалося зареєструвати замовлення" message={error}></Error>
-        )}
-        <p className="modal-actions">{actions}</p>
-      </form>
-    </Modal>
+              <Error title="Не вдалося зареєструвати замовлення" message={error}></Error>
+          )}
+          <p className="modal-actions">{actions}</p>
+        </form>
+      </Modal>
   );
 }

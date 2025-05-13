@@ -17,10 +17,10 @@ export default function Flowers() {
   }
 
   return (
-    <ul id="flowers">
-      {loadedFlowers.map((flower) => (
-        <FlowerItem key={flower.id} flower={flower} />
-      ))}
-    </ul>
+      <ul id="flowers">
+        {loadedFlowers.map((flower) => (
+            <FlowerItem key={flower.id} flower={flower} />
+        ))}
+      </ul>
   );
 }
