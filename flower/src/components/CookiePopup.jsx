@@ -62,7 +62,7 @@ const CookiePopup = () => {
             marginLeft: "10px",
           }}
           declineButtonStyle={{
-            background: "rgb(90,62,66)", 
+            background: "rgb(90,62,66)", // червоний фон
             color: "#fff",
             border: "none",
             padding: "8px 16px",
