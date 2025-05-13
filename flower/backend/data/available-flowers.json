@@ -1,0 +1,114 @@
+[
+  {
+    "id": "m1",
+    "name": "Ранкова ніжність",
+    "price": "480",
+    "description": "Букет із рожевих півоній і білих троянд — ідеальний для романтичного настрою.",
+    "image": "images/bouquet-morning-delicacy.jpg"
+  },
+  {
+    "id": "m2",
+    "name": "Весняний дотик",
+    "price": "390",
+    "description": "Тюльпани пастельних відтінків, обгорнуті в ніжний крафт-папір.",
+    "image": "images/bouquet-spring-touch.jpg"
+  },
+  {
+    "id": "m3",
+    "name": "Квіткова фантазія",
+    "price": "620",
+    "description": "Композиція з гортензій, троянд і евкаліпту в рожевих тонах.",
+    "image": "images/bouquet-flower-fantasy.jpg"
+  },
+  {
+    "id": "m4",
+    "name": "Сонячний настрій",
+    "price": "450",
+    "description": "Жовті гербери, троянди й ромашки створюють відчуття тепла та радості.",
+    "image": "images/bouquet-sunny-mood.jpg"
+  },
+  {
+    "id": "m5",
+    "name": "Лавандовий вечір",
+    "price": "510",
+    "description": "Лаванда, фіолетові троянди та легкий аромат природи у кожній гілочці.",
+    "image": "images/bouquet-lavender-evening.jpg"
+  },
+  {
+    "id": "m6",
+    "name": "Сніжна казка",
+    "price": "530",
+    "description": "Білі троянди, гіпсофіла й сріблясті деталі — як зима у серці літа.",
+    "image": "images/bouquet-snow-fairytale.jpg"
+  },
+  {
+    "id": "m7",
+    "name": "Класика любові",
+    "price": "650",
+    "description": "Червоні троянди у стильному обгортанні — класичне зізнання в почуттях.",
+    "image": "images/bouquet-love-classic.jpg"
+  },
+  {
+    "id": "m8",
+    "name": "Флоральна мрія",
+    "price": "470",
+    "description": "Змішані сезонні квіти з ноткою дикої природи.",
+    "image": "images/bouquet-floral-dream.jpg"
+  },
+  {
+    "id": "m9",
+    "name": "Літній бриз",
+    "price": "520",
+    "description": "Соняшники, ромашки й зелень у яскравому букеті для гарного настрою.",
+    "image": "images/bouquet-summer-breeze.jpg"
+  },
+  {
+    "id": "m10",
+    "name": "Ніжність вечора",
+    "price": "580",
+    "description": "Елегантні троянди кольору шампанського з пудровими акцентами.",
+    "image": "images/bouquet-evening-gentleness.jpg"
+  },
+  {
+    "id": "m11",
+    "name": "Краплини щастя",
+    "price": "490",
+    "description": "Міні-букет із гербер, альстромерій та свіжої зелені.",
+    "image": "images/bouquet-drops-of-happiness.jpg"
+  },
+  {
+    "id": "m12",
+    "name": "Мелодія серця",
+    "price": "600",
+    "description": "Серцева композиція з рожевих і червоних троянд.",
+    "image": "images/bouquet-heart-melody.jpg"
+  },
+  {
+    "id": "m13",
+    "name": "Французький шарм",
+    "price": "670",
+    "description": "Лавандові нотки, білі квіти й дух Провансу в кожному пелюстку.",
+    "image": "images/bouquet-french-charm.jpg"
+  },
+  {
+    "id": "m14",
+    "name": "Рожевий вечір",
+    "price": "430",
+    "description": "Троянди, альстромерії та еустоми в рожевих відтінках.",
+    "image": "images/bouquet-pink-evening.jpg"
+  },
+  {
+    "id": "m15",
+    "name": "Чуттєва класика",
+    "price": "580",
+    "description": "Темно-червоні троянди в елегантному оформленні.",
+    "image": "images/bouquet-sensual-classic.jpg"
+  },
+  {
+    "id": "m16",
+    "name": "Натхнення",
+    "price": "495",
+    "description": "Мікс сезонних квітів у коробці — стиль і зручність.",
+    "image": "images/bouquet-inspiration.jpg"
+  }
+]
