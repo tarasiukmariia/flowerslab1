@@ -1,3 +1,10 @@
+/**
+ * Компонент кошика, який показує замовлені товари та загальну суму.
+ * Використовує контекст для отримання даних з кошика та прогресу користувача.
+ * @file Cart.jsx
+ * @component
+ * @returns {JSX.Element} - Кошик з товарами та кнопками для закриття або переходу до замовлення.
+ */
 import { useContext } from "react";
 import Modal from "./UI/Modal";
 import CartContext from "../store/CartContext";

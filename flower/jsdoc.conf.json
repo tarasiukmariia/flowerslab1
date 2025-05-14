@@ -1,0 +1,20 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": [
+      "src/App.jsx",
+      "src/components",
+      "src/components/UI",
+      "src/store"
+    ],
+    "exclude": ["node_modules"],
+    "includePattern": "\\.jsx?$",
+    "excludePattern": "(node_modules|docs)"
+  },
+  "opts": {
+    "destination": "./docs",
+    "recurse": true
+  }
+}

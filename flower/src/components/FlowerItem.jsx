@@ -1,3 +1,16 @@
+/**
+ * Компонент для відображення інформації про букет, який можна додати до кошика.
+ * @file flowerItem.jsx
+ * @param {Object} props - Властивості компонента
+ * @param {Object} props.flower - Букет, який буде відображена
+ * @param {string} props.flower.id - Унікальний ідентифікатор квітів
+ * @param {string} props.flower.name - Назва квітів
+ * @param {string} props.flower.description - Опис квітів
+ * @param {number} props.flower.price - Ціна квітів
+ * @param {string} props.flower.image - Шлях до зображення квітів
+ *
+ * @returns {JSX.Element} - Квіти
+ */
 import { useContext } from "react";
 import { currencyFormatter } from "../util/formatting";
 import Button from "./UI/Button";

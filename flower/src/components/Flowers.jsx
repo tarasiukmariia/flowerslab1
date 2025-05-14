@@ -1,3 +1,8 @@
+/**
+ * Компонент для відображення списку букетів.
+ * @file Flowers.jsx
+ * @returns {JSX.Element} - Список квітів
+ */
 import FlowerItem from "./FlowerItem";
 import useHttp from "../hooks/useHttp";
 import Error from "./Error";

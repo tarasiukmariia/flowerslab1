@@ -1,3 +1,8 @@
+/**
+ * Компонент оформлення замовлення, який дозволяє користувачу ввести дані та надіслати замовлення.
+ * @file Checkout.jsx
+ * @returns {JSX.Element} - Форма для оформлення замовлення
+ */
 import { useContext, useActionState } from "react";
 import Modal from "./UI/Modal";
 import CartContext from "../store/CartContext";
@@ -73,7 +78,7 @@ export default function Checkout() {
           <h2>Дякуємо!</h2>
           <p>Ваше замовлення зареєстровано.</p>
           <p>
-            Найближчим часом ми зв’яжемося з вами ♥️.
+            Найближчим часом ми зв’яжемося з вами ♥.
           </p>
           <p className="modal-actions">
             <Button onClick={handleFinish}>Закрити</Button>
