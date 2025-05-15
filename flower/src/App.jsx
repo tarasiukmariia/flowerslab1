@@ -1,3 +1,4 @@
+import logoImg from "../src/assets/logo.jpg";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import Header from "./components/Header";
@@ -10,8 +11,8 @@ function App() {
   return (
     <UserProgressContextProvider>
       <CartContextProvider>
-      <CookiePopup />
-        <Header />
+        <CookiePopup />
+        <Header title="Bouquet" logo={logoImg} />
         <Flowers />
         <Cart />
         <Checkout />

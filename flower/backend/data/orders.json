@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "items": [
+      {
+        "id": "m2",
+        "name": "Весняний дотик",
+        "price": "480",
+        "description": "Букет із рожевих півоній і білих троянд — ідеальний для романтичного настрою.",
+        "image": "images/bouquet-morning-delicacy.jpg",
+        "quantity": 2
+      }
+    ],
+    "customer": {
+      "name": "Марія",
+      "email": "maria@gmail.com",
+      "street": "Київська",
+      "postal-code": "123456",
+      "city": "Житомир"
+    },
+    "id": "927.6856014458652"
+  }
+]

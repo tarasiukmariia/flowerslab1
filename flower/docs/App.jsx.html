@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/UI/Button.jsx</title>
+    <title>JSDoc: Source: App.jsx</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/UI/Button.jsx</h1>
+    <h1 class="page-title">Source: App.jsx</h1>
 
     
 
@@ -27,24 +27,33 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Кнопка, яка відображає текст або звичайну кнопку залежно від параметра `textOnly`.
- * @file Button.jsx
- * @param {Object} props - Властивості компонента
- * @param {React.ReactNode} props.children - Вміст кнопки
- * @param {boolean} [props.textOnly=false] - Якщо true, кнопка буде текстовою
- * @param {string} [props.className] - Додаткові CSS класи для кнопки
- * 
- * @returns {JSX.Element} - Кнопка
+ * Головний компонент застосунку, що обгортає інші компоненти в контексти та відображає всі частини інтерфейсу.
+ * @file App.jsx
+ * @returns {JSX.Element} - Головний компонент застосунку
  */
-export default function Button({ children, textOnly, className, ...props }) {
-  let cssClasses = textOnly ? "text-button" : "button";
-  cssClasses += " " + className;
+import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
+import Header from "./components/Header";
+import flowers from "./components/flowers";
+import CookiePopup from "./components/CookiePopup";
+import { CartContextProvider } from "./store/CartContext";
+import { UserProgressContextProvider } from "./store/UserProgressContext";
+
+function App() {
   return (
-    &lt;button className={cssClasses} {...props}>
-      {children}
-    &lt;/button>
+    &lt;UserProgressContextProvider>
+      &lt;CartContextProvider>
+      &lt;CookiePopup />
+        &lt;Header />
+        &lt;flowers />
+        &lt;Cart />
+        &lt;Checkout />
+      &lt;/CartContextProvider>
+    &lt;/UserProgressContextProvider>
   );
 }
+
+export default App;
 </code></pre>
         </article>
     </section>
