@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "7938644e-eaf8-49ec-86e7-45be17cdb5b5",
+		"name": "Bouquet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35122222"
+	},
+	"item": [
+		{
+			"name": "get flowers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/flowers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"flowers"
+					]
+				},
+				"description": "Цей get запит для отримання всіх доступних квітів.\n\nСтатус код: **200 ОК**\n\nРезультат:\n\n``` json\n[\n    {\n        \"id\": \"m1\",\n        \"name\": \"Ранкова ніжність\",\n        \"price\": \"480\",\n        \"description\": \"Букет із рожевих півоній і білих троянд — ідеальний для романтичного настрою.\",\n        \"image\": \"images/bouquet-morning-delicacy.jpg\"\n    },\n    {\n        \"id\": \"m2\",\n        \"name\": \"Весняний дотик\",\n        \"price\": \"390\",\n        \"description\": \"Тюльпани пастельних відтінків, обгорнуті в ніжний крафт-папір.\",\n        \"image\": \"images/bouquet-spring-touch.jpg\"\n    },\n    {\n        \"id\": \"m3\",\n        \"name\": \"Квіткова фантазія\",\n        \"price\": \"620\",\n        \"description\": \"Композиція з гортензій, троянд і евкаліпту в рожевих тонах.\",\n        \"image\": \"images/bouquet-flower-fantasy.jpg\"\n    },\n    {\n        \"id\": \"m4\",\n        \"name\": \"Сонячний настрій\",\n        \"price\": \"450\",\n        \"description\": \"Жовті гербери, троянди й ромашки створюють відчуття тепла та радості.\",\n        \"image\": \"images/bouquet-sunny-mood.jpg\"\n    },\n    {\n        \"id\": \"m5\",\n        \"name\": \"Лавандовий вечір\",\n        \"price\": \"510\",\n        \"description\": \"Лаванда, фіолетові троянди та легкий аромат природи у кожній гілочці.\",\n        \"image\": \"images/bouquet-lavender-evening.jpg\"\n    },\n    {\n        \"id\": \"m6\",\n        \"name\": \"Сніжна казка\",\n        \"price\": \"530\",\n        \"description\": \"Білі троянди, гіпсофіла й сріблясті деталі — як зима у серці літа.\",\n        \"image\": \"images/bouquet-snow-fairytale.jpg\"\n    },\n    {\n        \"id\": \"m7\",\n        \"name\": \"Класика любові\",\n        \"price\": \"650\",\n        \"description\": \"Червоні троянди у стильному обгортанні — класичне зізнання в почуттях.\",\n        \"image\": \"images/bouquet-love-classic.jpg\"\n    },\n    {\n        \"id\": \"m8\",\n        \"name\": \"Флоральна мрія\",\n        \"price\": \"470\",\n        \"description\": \"Змішані сезонні квіти з ноткою дикої природи.\",\n        \"image\": \"images/bouquet-floral-dream.jpg\"\n    },\n    {\n        \"id\": \"m9\",\n        \"name\": \"Літній бриз\",\n        \"price\": \"520\",\n        \"description\": \"Соняшники, ромашки й зелень у яскравому букеті для гарного настрою.\",\n        \"image\": \"images/bouquet-summer-breeze.jpg\"\n    },\n    {\n        \"id\": \"m10\",\n        \"name\": \"Ніжність вечора\",\n        \"price\": \"580\",\n        \"description\": \"Елегантні троянди кольору шампанського з пудровими акцентами.\",\n        \"image\": \"images/bouquet-evening-gentleness.jpg\"\n    },\n    {\n        \"id\": \"m11\",\n        \"name\": \"Краплини щастя\",\n        \"price\": \"490\",\n        \"description\": \"Міні-букет із гербер, альстромерій та свіжої зелені.\",\n        \"image\": \"images/bouquet-drops-of-happiness.jpg\"\n    },\n    {\n        \"id\": \"m12\",\n        \"name\": \"Мелодія серця\",\n        \"price\": \"600\",\n        \"description\": \"Серцева композиція з рожевих і червоних троянд.\",\n        \"image\": \"images/bouquet-heart-melody.jpg\"\n    },\n    {\n        \"id\": \"m13\",\n        \"name\": \"Французький шарм\",\n        \"price\": \"670\",\n        \"description\": \"Лавандові нотки, білі квіти й дух Провансу в кожному пелюстку.\",\n        \"image\": \"images/bouquet-french-charm.jpg\"\n    },\n    {\n        \"id\": \"m14\",\n        \"name\": \"Рожевий вечір\",\n        \"price\": \"430\",\n        \"description\": \"Троянди, альстромерії та еустоми в рожевих відтінках.\",\n        \"image\": \"images/bouquet-pink-evening.jpg\"\n    },\n    {\n        \"id\": \"m15\",\n        \"name\": \"Чуттєва класика\",\n        \"price\": \"580\",\n        \"description\": \"Темно-червоні троянди в елегантному оформленні.\",\n        \"image\": \"images/bouquet-sensual-classic.jpg\"\n    },\n    {\n        \"id\": \"m16\",\n        \"name\": \"Натхнення\",\n        \"price\": \"495\",\n        \"description\": \"Мікс сезонних квітів у коробці — стиль і зручність.\",\n        \"image\": \"images/bouquet-inspiration.jpg\"\n    }\n]\n\n ```"
+			},
+			"response": []
+		},
+		{
+			"name": "post orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"order\": {\r\n    \"items\": [\r\n      {\r\n        \"id\": \"m2\",\r\n        \"name\": \"Весняний дотик\",\r\n        \"price\": \"480\",\r\n        \"description\": \"Букет із рожевих півоній і білих троянд — ідеальний для романтичного настрою.\",\r\n        \"image\": \"images/bouquet-morning-delicacy.jpg\",\r\n        \"quantity\": 2\r\n      }\r\n    ],\r\n    \"customer\": {\r\n      \"name\": \"Марія\",\r\n      \"email\": \"maria@gmail.com\",\r\n      \"street\": \"Київська\",\r\n      \"postal-code\": \"123456\",\r\n      \"city\": \"Житомир\"\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				},
+				"description": "Цей post запит для відправки замовлення та користувача, який зробив його.\n\nСтатус код: **201 Created**\n\nПовідомлення:\n\n``` json\n{\n    \"message\": \"Замовлення створено!\"\n}\n\n ```"
+			},
+			"response": []
+		}
+	]
+}
